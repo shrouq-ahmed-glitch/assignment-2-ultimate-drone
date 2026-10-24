@@ -1,0 +1,1219 @@
+
+/* General Settings */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #292929;
+}
+
+
+                   /* Navbar */
+
+.navbar {
+    background-color: #f5f3ff;
+    padding: 0 4%;
+    border-bottom: 1px solid #d8ccff;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    background-color: #8b45ff;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.logo h1 {
+    font-size: 23px;
+    margin: 0;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+}
+
+.navbar-links .blue-line {
+    color: #8b45ff;
+    text-decoration: underline;
+}
+
+
+/* Drone Introduction */
+
+.drone-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5%;
+    padding: 30px 4%;
+}
+
+.drone-image {
+    width: 48%;
+    border: 2px solid #e0e3e8;
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+}
+
+.drone-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+}
+
+.discount {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background-color: #914dff;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.drone-info {
+    width: 48%;
+}
+
+.badges {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.badges span {
+    background-color: #a67cff;
+    color: white;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.drone-info h1 {
+    font-size: 48px;
+    margin: 0 0 20px;
+    color: #222;
+}
+
+.drone-info h1 span {
+    color: #914dff;
+}
+
+.description {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 15px;
+}
+
+.price h2 {
+    font-size: 34px;
+    margin: 0;
+}
+
+.price del {
+    font-size: 20px;
+}
+
+.save {
+    background-color: #ffe1e4;
+    color: red;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.payment {
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.cart,
+.wishlist {
+    width: 100%;
+    padding: 18px;
+    border-radius: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.cart {
+    background-color: #914dff;
+    color: white;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.cart img,
+.wishlist img {
+    width: 20px;
+    height: 20px;
+}
+
+.wishlist {
+    background-color: white;
+    color: #222;
+    border: 2px solid #d4d8e0;
+}
+
+
+.features {
+    background-color: #f7f5ff;
+    padding: 70px 4% 80px;
+}
+
+
+
+
+.features-title {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.features-title h2 {
+    font-size: 36px;
+    color: #292929;
+    margin: 0 0 15px;
+}
+
+.features-title h2 span {
+    color: #914dff;
+}
+
+.features-title p {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px 0;
+}
+
+.card {
+    width: 31.5%;
+    background-color: white;
+    border: 1px solid #e9e2ff;
+    border-radius: 25px;
+    padding: 32px;
+}
+
+.icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.icon img {
+    width: 23px;
+    height: 23px;
+}
+
+.video {
+    background-color: #eee7ff;
+}
+
+.video img {
+    filter: invert(30%) sepia(100%) saturate(5000%)
+    hue-rotate(260deg) brightness(100%);
+}
+
+.camera {
+    background-color: #cffafe;
+}
+
+.camera img {
+    filter: invert(30%) sepia(100%) saturate(1500%)
+    hue-rotate(155deg) brightness(80%);
+}
+
+.battery {
+    background-color: #d1fae5;
+}
+
+.battery img {
+    filter: invert(35%) sepia(100%) saturate(1000%)
+    hue-rotate(110deg) brightness(80%);
+}
+
+.satellite {
+    background-color: #ffedd5;
+}
+
+.satellite img {
+    filter: invert(30%) sepia(100%) saturate(4000%)
+    hue-rotate(350deg) brightness(80%);
+}
+
+.shield {
+    background-color: #e0f2fe;
+}
+
+.shield img {
+    filter: invert(25%) sepia(100%) saturate(2000%)
+    hue-rotate(170deg) brightness(80%);
+}
+
+.speed {
+    background-color: #ffe4e6;
+}
+
+.speed img {
+    filter: invert(20%) sepia(100%) saturate(4000%)
+    hue-rotate(320deg) brightness(80%);
+}
+
+.number {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #914dff;
+    margin: 0 0 12px;
+}
+
+.card-title {
+    font-size: 23px;
+    color: #292929;
+    margin: 0 0 15px;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 1.65;
+    color: #333;
+    margin: 0 0 25px;
+}
+
+.card-info {
+    border-top: 1px solid #e9e2ff;
+    padding-top: 20px;
+}
+
+.card-info h2 {
+    font-size: 28px;
+    color: #7250aa;
+    margin: 0 0 7px;
+}
+
+.card-info p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+
+/* Bottom Banner */
+
+.banner {
+    background-color: #821fff;
+    color: white;
+    border-radius: 25px;
+    padding: 40px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.banner-text p {
+    color: #eadcff;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 12px;
+}
+
+.banner-text h2 {
+    font-size: 30px;
+    margin: 0 0 10px;
+}
+
+.banner-text span {
+    font-size: 16px;
+}
+
+.banner-button {
+    background-color: white;
+    color: #821fff;
+    border: none;
+    border-radius: 40px;
+    padding: 20px 28px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+
+/* Reviews Section */
+
+.reviews {
+    padding: 70px 4% 80px;
+    background-color: white;
+   
+}
+
+.reviews-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.reviews-title h2 {
+    font-size: 36px;
+    color: #292929;
+    margin: 0 0 15px;
+}
+
+.reviews-title h2 span {
+    color: #914dff;
+}
+
+.reviews-title p {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+}
+
+
+/* Reviews Two-Column Layout */
+
+.reviews-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 45px;
+}
+
+
+/* Rating Summary on the Left */
+
+.rating-summary {
+    width: 32%;
+    flex-shrink: 0;
+    position: sticky;
+    top: 90px;
+    display: block;
+    background-color: white;
+    border: 2px solid #e2e5eb;
+    border-radius: 25px;
+    padding: 30px;
+    margin: 0;
+}
+
+.rating-number {
+    text-align: center;
+}
+
+.rating-number h2 {
+    font-size: 58px;
+    color: #333;
+    margin: 0;
+}
+
+.rating-number p {
+    color: #333;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.stars {
+    color: #ffb800;
+    letter-spacing: 3px;
+}
+
+.rating-number .stars {
+    font-size: 25px;
+    margin: 0;
+}
+
+.rating-bars {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 18px 0;
+    font-size: 14px;
+}
+
+.rating-row span {
+    white-space: nowrap;
+}
+
+.bar {
+    height: 12px;
+    background-color: #e2e5eb;
+    border-radius: 10px;
+    flex: 1;
+    
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: #ffb800;
+    border-radius: 10px;
+}
+
+.fill-78 {
+    width: 78%;
+}
+
+.fill-15 {
+    width: 15%;
+}
+
+.fill-5 {
+    width: 5%;
+}
+
+.fill-1-5 {
+    width: 1.5%;
+}
+
+.fill-0-5 {
+    width: 0.5%;
+}
+
+
+/* Rating Summary Bottom */
+
+.rating-extra {
+    border-top: 1px solid #d8dce5;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+}
+
+.rating-extra div {
+    width: 50%;
+}
+
+.rating-extra h2 {
+    font-size: 24px;
+    color: #292929;
+    margin: 5px 0;
+}
+
+.rating-extra p {
+    color: #333;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+
+/* Customer Reviews on the Right */
+
+.reviews-cards {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.review-card {
+    width: 100%;
+    border: 2px solid #e2e5eb;
+    border-radius: 18px;
+    padding: 30px;
+    background-color: white;
+}
+
+.review-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.customer img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #a67cff;
+}
+
+.customer h3 {
+    font-size: 17px;
+    margin: 0 0 5px;
+    color: #222;
+}
+
+.customer p {
+    font-size: 16px;
+    color: #444;
+    margin: 0 0 8px;
+}
+
+.customer-stars {
+    font-size: 14px;
+   
+}
+
+.customer-stars span {
+    color: #ffb800;
+    font-size: 20px;
+    
+}
+
+.review-date {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.review-date span {
+    display: inline-block;
+    background-color: #f0e8ff;
+    color: #7200e8;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 12px;
+    
+}
+
+.review-date p {
+    color: #444;
+    font-size: 14px;
+    margin: 8px 0 0;
+}
+
+.review-text {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #222;
+    margin: 25px 0 0;
+}
+
+
+/* Load More Reviews */
+
+.load-button {
+    align-self: center;
+    padding: 16px 34px;
+    background-color: #914dff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+/* Related Products */
+
+.related-products {
+    padding: 70px 4% 80px;
+    background-color: #f7f5ff;
+   
+}
+
+.products-title {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.products-title h2 {
+    font-size: 36px;
+    color: #292929;
+    margin: 0 0 15px;
+}
+
+.products-title h2 span {
+    color: #914dff;
+}
+
+.products-title p {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+
+/* Product Cards */
+
+.products-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px 0;
+}
+
+.product-card {
+    width: 23.5%;
+    background-color: white;
+    border: 2px solid #e2e5eb;
+    border-radius: 18px;
+    padding: 24px;
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+}
+
+.product-image img {
+    display: block;
+    width: 100%;
+    height: 192px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.product-label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: inline-block;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.accessory {
+    background-color: #00bfa5;
+}
+
+.essential {
+    background-color: #00c853;
+}
+
+.power {
+    background-color: #00bcd4;
+}
+
+.safety {
+    background-color: #ff6d00;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    color: #292929;
+    margin: 25px 0 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0 0 18px;
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-bottom h2 {
+    font-size: 23px;
+    color: #292929;
+    margin: 5px 0;
+}
+
+.product-bottom button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #914dff;
+    color: white;
+    font-size: 15px;
+ 
+   
+}
+
+.all-products-button {
+    display: block;
+    margin: 50px auto 0;
+    padding: 16px 32px;
+    border: 2px solid #821fff;
+    border-radius: 30px;
+    background-color: white;
+    color: #821fff;
+    font-size: 16px;
+    font-weight: bold;
+   
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #101827;
+    color: white;
+    padding: 60px 4% 25px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #293244;
+}
+
+.footer-about {
+    width: 26%;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background-color: #821fff;
+    border-radius: 10px;
+}
+
+.footer-about h2 {
+    font-size: 25px;
+    color: white;
+    margin: 0;
+}
+
+.footer-about p {
+    color: #e0e3eb;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 25px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202b3c;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-links h3 {
+    font-size: 17px;
+    margin: 5px 0 10px;
+    color: white;
+}
+
+.footer-links a,
+.footer-bottom a {
+    color: #b9c2d0;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-links a:hover,
+.footer-bottom a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 25px;
+}
+
+.footer-bottom p {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
+
+.payment-methods {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+
+.payment-methods span {
+    height: 40px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: white;
+    font-weight: bold;
+}
+
+.paypal {
+    color: #0755a5;
+    font-style: italic;
+}
+
+.mastercard {
+    position: relative;
+}
+
+.mastercard i,
+.mastercard b {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.mastercard i {
+    background-color: #eb001b;
+    margin-right: -7px;
+}
+
+.mastercard b {
+    background-color: #f79e1b;
+    opacity: 0.9;
+}
+
+.visa {
+    color: #1434cb;
+    font-size: 22px;
+    font-style: italic;
+}
+
+
+/* Responsive Layout */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 3%;
+    }
+
+    .navbar-links {
+        gap: 12px;
+    }
+
+    .navbar-links a {
+        font-size: 13px;
+    }
+
+    .drone-intro {
+        gap: 25px;
+    }
+
+    .drone-image,
+    .drone-info {
+        width: 50%;
+    }
+
+    .drone-info h1 {
+        font-size: 36px;
+    }
+
+    .card {
+        width: 48%;
+    }
+
+    .reviews-content {
+        gap: 20px;
+    }
+
+    .rating-summary {
+        width: 35%;
+        padding: 20px;
+    }
+
+    .reviews-cards {
+        width: 65%;
+    }
+
+    .review-top {
+        flex-direction: column;
+    }
+
+    .review-date {
+        text-align: left;
+    }
+
+    .product-card {
+        width: 48%;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+    }
+
+    .footer-about {
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+        min-height: 72px;
+        padding: 12px 4%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .navbar-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .drone-intro {
+        flex-direction: column;
+    }
+
+    .drone-image,
+    .drone-info {
+        width: 100%;
+    }
+
+    .drone-image img {
+        height: 320px;
+    }
+
+    .drone-info h1 {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+
+    .price {
+        flex-wrap: wrap;
+    }
+
+    .features,
+    .reviews,
+    .related-products {
+        padding: 45px 5%;
+    }
+
+    .features-title h2,
+    .reviews-title h2,
+    .products-title h2 {
+        font-size: 28px;
+    }
+
+    .features-title p,
+    .reviews-title p,
+    .products-title p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .card {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 28px;
+    }
+
+    .banner-text h2 {
+        font-size: 25px;
+    }
+
+    .banner-button {
+        white-space: normal;
+    }
+
+    .reviews-content {
+        flex-direction: column;
+    }
+
+    .rating-summary {
+        position: static;
+        width: 100%;
+    }
+
+    .reviews-cards {
+        width: 100%;
+    }
+
+    .review-card {
+        padding: 20px;
+    }
+
+    .review-top {
+        flex-direction: column;
+    }
+
+    .review-date {
+        text-align: left;
+    }
+
+    .review-text {
+        font-size: 15px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .product-image img {
+        height: 230px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .footer-about {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+ .payment-methods {
+    display: flex;
+    gap: 15px;
+}
+
+.payment-methods img {
+    width: 84px;
+    height: 40px;
+    border-radius: 8px;
+}
+}
+
+
+/* Hover Effects */
+
+/* Navbar Links */
+.navbar-links a:hover {
+    color: #914dff;
+}
+
+/* Main Buttons */
+.cart:hover,
+.banner-button:hover,
+.load-button:hover,
+.all-products-button:hover {
+    opacity: 0.8;
+}
+
+/* Wishlist Button */
+.wishlist:hover {
+    background-color: #f0e8ff;
+}
+
+/* Feature Cards */
+.card:hover {
+    background-color: #f0e8ff;
+    border-color: #914dff;
+}
+
+/* Product Cards */
+.product-card:hover {
+    border-color: #914dff;
+}
+
+/* Product Buttons */
+.product-bottom button:hover {
+    background-color: #821fff;
+}
+
+/* Social Links */
+.social-icons a:hover {
+    background-color: #914dff;
+}
